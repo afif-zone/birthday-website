@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday, Fernyvia</title>
+<meta name="description" content="A little birthday surprise for Fernyvia Verra.">
+<meta name="theme-color" content="#5B477A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- SECTION A: intro -->
+<section id="intro" class="intro" aria-label="Welcome">
+  <div class="fx" data-fx></div>
+  <p class="intro-text">A little something for someone special...</p>
+  <button class="btn" id="openBtn" type="button">Open Your Surprise</button>
+</section>
+
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="Back to top">F</a>
+  <nav id="nav" aria-label="Sections">
+    <a href="#home">Birthday</a><a href="#memories">Memories</a><a href="#letter">Letter</a><a href="#surprises">Surprises</a><a href="#final">Last Thing</a>
+  </nav>
+  <button class="icon-btn" id="musicBtn" type="button" aria-pressed="false" aria-label="Play music">♪</button>
+  <button class="icon-btn menu" id="menuBtn" type="button" aria-expanded="false" aria-label="Open menu">☰</button>
+</header>
+
+<main>
+<!-- SECTION B -->
+<section id="home" class="sec hero">
+  <div class="fx" data-fx></div>
+  <h1 class="title" id="title" aria-label="Happy Birthday, Fernyvia Verra!"><span data-split>Happy Birthday,</span><br><span data-split class="name">Dino Ferr!</span></h1>
+  <svg class="cake" viewBox="0 0 200 190" role="img" aria-label="Birthday cake with a lit candle">
+    <ellipse cx="100" cy="176" rx="84" ry="9" fill="#5B477A" opacity=".15"/>
+    <rect x="30" y="112" width="140" height="58" rx="14" fill="#C8B6E2"/>
+    <rect x="48" y="70" width="104" height="46" rx="12" fill="#F8F5EE" stroke="#C8B6E2" stroke-width="3"/>
+    <path d="M30 124c14 12 22-8 36 4s22-10 36 2 22-10 36 2 22-6 32 2v-14H30z" fill="#fff"/>
+    <path d="M48 84c10 12 18-6 28 4s18-8 28 2 18-8 28 2 14 0 20 2V74H48z" fill="#A3B18A"/>
+    <rect x="96" y="40" width="8" height="32" rx="3" fill="#5B477A"/>
+    <path class="flame" d="M100 12c9 10 9 18 0 24-9-6-9-14 0-24z" fill="#F4C95D"/>
+    <g fill="#5B477A"><circle cx="70" cy="146" r="4"/><circle cx="100" cy="150" r="4"/><circle cx="130" cy="146" r="4"/></g>
+  </svg>
+  <p class="lead">I hopes today feels as bright and gentle as you make the people around you feel. Thank you for being someone worth celebrating, and I hope this new year is kind to you.</p>
+  <p class="lead">P/S: KAMU DAH TUA!!</p>
+  <button class="btn" id="confettiBtn" type="button">Celebrate</button>
+</section>
+
+<!-- SECTION C -->
+<section id="memories" class="sec alt">
+  <h2>Little Memories</h2>
+  <p class="sub">Tap a photo to see it bigger.</p>
+  <!-- Replace the src files in assets/images and edit the captions below -->
+  <div class="grid">
+    <figure><button type="button" class="ph"><img src="assets/images/photo1.jpg" alt="Photo 1" loading="lazy"></button><figcaption>A smile that makes ordinary days feel special</figcaption></figure>
+    <figure><button type="button" class="ph"><img src="assets/images/photo2.jpg" alt="Photo 2" loading="lazy"></button><figcaption>This was us during Hari Raya</figcaption></figure>
+    <figure><button type="button" class="ph"><img src="assets/images/photo3.jpg" alt="Photo 3" loading="lazy"></button><figcaption>Beautiful, effortless, and completely unforgettable</figcaption></figure>
+    <figure><button type="button" class="ph"><img src="assets/images/photo4.jpg" alt="Photo 4" loading="lazy"></button><figcaption>Finding happiness in the little things</figcaption></figure>
+    <figure><button type="button" class="ph"><img src="assets/images/photo5.jpg" alt="Photo 5" loading="lazy"></button><figcaption>A mirror could never capture how amazing you truly are</figcaption></figure>
+    <figure><button type="button" class="ph"><img src="assets/images/photo6.jpg" alt="Photo 6" loading="lazy"></button><figcaption>Even behind a mask, your charm still shines through</figcaption></figure>
+  </div>
+</section>
+<dialog id="lightbox" aria-label="Enlarged photo">
+  <img id="lbImg" alt=""><p id="lbCap"></p>
+  <button class="btn small" id="lbClose" type="button">Close</button>
+</dialog>
+
+<!-- SECTION D -->
+<section id="letter" class="sec">
+  <h2>A Few Words</h2>
+  <p class="sub">Tap the envelope.</p>
+  <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-label="Open the letter">
+    <span class="flap"></span><span class="pocket"></span><span class="seal">✿</span>
+  </button>
+  <!-- Edit the letter text here -->
+  <article class="paper" id="paper" hidden>
+    <p>Dear Ferr,</p>
+    <p>Happy birthday. I wanted to take a moment to say thank you for the memories we have shared and for the kindness you have shown along the way. They mean a lot to me.</p>
+    <p>I hope this year brings you peace, laughter, good health and plenty of room to chase the things you care about. You deserve every bit of that success and happiness.</p>
+    <p>Whatever the year holds, I'm wishing you only good things.</p>
+    <p class="sign">With warm wishes,<br>Afif</p>
+  </article>
+</section>
+
+<!-- SECTION E -->
+<section id="surprises" class="sec alt">
+  <h2>Little Surprises</h2>
+  <p class="sub">Five tiny things to find. Tap each one.</p>
+  <div class="surp">
+    <button type="button" class="s"><span class="ic">✿</span><span class="m">I hope today brings you countless reasons to smile.</span></button>
+    <button type="button" class="s"><span class="ic">🎁</span><span class="m">May this new chapter bring you happiness and exciting opportunities.</span></button>
+    <button type="button" class="s"><span class="ic">🦋</span><span class="m">Keep being the wonderful person you are.</span></button>
+    <button type="button" class="s"><span class="ic">❀</span><span class="m">You deserve all the good things life has to offer.</span></button>
+    <button type="button" class="s"><span class="ic">✦</span><span class="m">Make a wish. I hope it comes true.</span></button>
+  </div>
+   <div class="hug-box" id="hugBox">
+    <svg viewBox="0 0 300 180" role="img" aria-label="Two friends sharing a hug">
+      <g class="a">
+        <ellipse cx="90" cy="125" rx="36" ry="42" fill="#C8B6E2"/>
+        <circle cx="90" cy="72" r="26" fill="#E6DDF3"/>
+        <circle cx="81" cy="70" r="2.6" fill="#5B477A"/><circle cx="99" cy="70" r="2.6" fill="#5B477A"/>
+        <path d="M82 80q8 7 16 0" fill="none" stroke="#5B477A" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <g class="b">
+        <ellipse cx="210" cy="125" rx="36" ry="42" fill="#A3B18A"/>
+        <circle cx="210" cy="72" r="26" fill="#DDE5D0"/>
+        <circle cx="201" cy="70" r="2.6" fill="#5B477A"/><circle cx="219" cy="70" r="2.6" fill="#5B477A"/>
+        <path d="M202 80q8 7 16 0" fill="none" stroke="#5B477A" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <g class="a"><line class="arm" x1="108" y1="108" x2="108" y2="145" stroke="#C8B6E2" style="transform-origin:108px 108px"/></g>
+      <g class="b"><line class="arm" x1="192" y1="108" x2="192" y2="145" stroke="#A3B18A" style="transform-origin:192px 108px"/></g>
+    </svg>
+    <p class="hug-msg">A big, warm birthday hug for you :p </p>
+    <button class="btn" id="hugBtn" type="button">Send a Hug</button>
+  </div>
+</section>
+
+<!-- SECTION F -->
+<section id="final" class="sec closing">
+  <div class="fx" data-fx></div>
+  <div class="note">
+    <p>Another year, another chapter, and another opportunity to create beautiful memories.</p>
+    <p>I hope life continues to surprise you with happiness, kindness, and wonderful moments.</p>
+    <p>Once again, happy birthday, Ferr!</p>
+    <p class="sign">With warm wishes,<br>Afif ♡</p>
+  </div>
+  <button class="btn" id="replayBtn" type="button">Replay the Surprise</button>
+</section>
+</main>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+<audio id="bgm" src="assets/audio/music.mp3" loop preload="none"></audio>
+<script src="script.js"></script>
+</body>
+</html>
